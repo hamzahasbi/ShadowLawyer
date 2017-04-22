@@ -1,0 +1,2 @@
+Main-Class: \Avocat\src\application\MAIN.java
+Class-Path: Avocat\src\avocat

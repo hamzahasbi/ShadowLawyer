@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Avocat:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/Avocat_jar</output-path>
+    <root id="archive" name="Avocat.jar">
+      <element id="module-output" name="Avocat" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/avocat/mysql-connector-java-5.1.18-bin.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/avocat/jfxtras-labs-samples-8.0-r6-SNAPSHOT-all.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

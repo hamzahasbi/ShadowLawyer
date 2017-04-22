@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="970.0" stylesheets="@../Style/other.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avocat.controller.Assurance_control">
+   <children>
+      <fx:include source="Menu.fxml" />
+      <HBox spacing="6.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addAssurance" prefHeight="26.0" prefWidth="264.0" text="Ajouter une assurance" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="47.0" prefWidth="582.0" spacing="6.0">
+         <children>
+            <TextField fx:id="search" prefHeight="26.0" prefWidth="508.0" promptText="Rechercher une assurance" />
+            <Button mnemonicParsing="false" onAction="#select_cl" text="Recherche" />
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="table" onKeyPressed="#delete" onMouseClicked="#doubleClick" prefHeight="514.0" prefWidth="970.0">
+        <columns>
+          <TableColumn fx:id="nom_assur" prefWidth="201.0" text="Nom de l'assurance" />
+            <TableColumn fx:id="cin_resp" minWidth="0.0" prefWidth="238.0" text="CIN du responsable" />
+            <TableColumn fx:id="email" prefWidth="222.0" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

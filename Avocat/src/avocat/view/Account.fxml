@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="970.0" stylesheets="@../Style/Account.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avocat.controller.Update_control">
+   <children>
+      <fx:include source="Menu.fxml" />
+      <GridPane hgap="9.0" layoutX="2.0" layoutY="51.0" prefHeight="430.0" prefWidth="634.0" vgap="9.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="243.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="364.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="48.0" minHeight="0.0" prefHeight="42.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="2.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nom :" textFill="#2396d0" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Prenom :" textFill="#2396d0" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="Email :" textFill="#2396d0" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="Mot de passe :" textFill="#2396d0" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nom_mod" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="prenom_mod" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <PasswordField fx:id="mdp_mod" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="email_mod" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Mon compte :" textFill="#2396d0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#update_acc" prefHeight="26.0" prefWidth="218.0" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Numero de Tel :" textFill="#2396d0" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tel_mod" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </opaqueInsets>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+   </padding>
+</AnchorPane>

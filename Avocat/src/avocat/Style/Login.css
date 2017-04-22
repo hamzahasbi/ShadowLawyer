@@ -1,0 +1,35 @@
+
+.root {
+    -fx-background-image: url("../Ressources/back2.jpg");
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#sign {
+    -fx-text-fill: #cccc00;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#sign:hover{
+    -fx-cursor: hand;
+    -fx-text-fill: #1ce213;
+    -fx-font-family: "Ubuntu Light";
+}
+.toggle-button {
+    -fx-text-fill: #cccc00;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.hyperlink{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #199e07;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}

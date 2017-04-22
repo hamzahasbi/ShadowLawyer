@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="970.0" stylesheets="@../Style/Login.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avocat.controller.Connection_control">
+   <children>
+      <Text fx:id="res" fill="#07fac5ea" layoutX="54.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUT : Hors Ligne" textAlignment="CENTER" wrappingWidth="275.99998727440834">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="657.0" layoutY="350.0" onAction="#creation" prefHeight="28.0" prefWidth="108.0" text="S'inscrire" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="211.0" layoutY="200.0" opacity="0.28" stroke="BLACK" strokeType="INSIDE" width="548.0" />
+      <GridPane hgap="6.0" layoutX="211.0" layoutY="200.0" prefHeight="137.0" prefWidth="548.0" vgap="6.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="138.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="447.0" minWidth="10.0" prefWidth="410.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Login/Email :" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="24.0" prefWidth="126.0" text="Password :" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login_field" GridPane.columnIndex="1" />
+            <PasswordField fx:id="psswd_field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="sign" mnemonicParsing="false" onAction="#Go" prefHeight="23.0" prefWidth="108.0" text="Go!" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>

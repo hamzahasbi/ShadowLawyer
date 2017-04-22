@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="974.0" stylesheets="@../Style/Menu.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avocat.controller.Menu_control">
+   <children>
+      <HBox fx:id="test" layoutX="8.0" layoutY="7.0" prefHeight="26.0" prefWidth="644.0">
+         <children>
+            <Button fx:id="Accueil" mnemonicParsing="false" onAction="#GoAccueil" prefHeight="26.0" prefWidth="87.0" text="Accueil" />
+            <Button mnemonicParsing="false" onAction="#GoClients" prefHeight="26.0" prefWidth="85.0" text="Clients" />
+            <Button mnemonicParsing="false" onAction="#GoCalendar" prefHeight="26.0" prefWidth="94.0" text="Agenda" />
+            <Button mnemonicParsing="false" onAction="#GoAssurance" prefHeight="26.0" prefWidth="118.0" text="Assurance" />
+            <Button mnemonicParsing="false" onAction="#GoAccount" prefHeight="26.0" prefWidth="115.0" text="Compte" />
+            <Button mnemonicParsing="false" onAction="#GoMenu" prefHeight="26.0" prefWidth="85.0" text="Aide" />
+            <Button mnemonicParsing="false" onAction="#disconnection" prefHeight="26.0" prefWidth="133.0" text="Deconnexion" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

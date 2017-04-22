@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avocat.controller.newClient_control">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="963.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/help.jpg" />
+         </image>
+      </ImageView>
+      <fx:include source="Menu.fxml" />
+   </children>
+</AnchorPane>
